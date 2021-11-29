@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="srdrsn" constructor="DivColor" version="0.0.1" display-name-key="Change div color" description-key="Div Color Change" control-type="standard" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="color" display-name-key="color" description-key="a color" of-type="SingleLine.Text" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/div-color.css" order="1" />
+    </resources>
+  </control>
+</manifest>
