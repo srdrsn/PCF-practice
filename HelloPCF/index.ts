@@ -48,10 +48,14 @@ export class DivColor
     const colorInput = this.container.querySelector("input")!;
     const div = document.getElementById("divColor")!;
     div.style.backgroundColor = colorInput.value;
+    // this.notifyOutputChanged(); Important step for setting the value inside CRM!
   }
 
   public updateView(context: ComponentFramework.Context<IInputs>): void {
     // Add code to update control view
+    // Try to check what these two can achieve for you
+    // context.mode.isControlDisabled
+    // context.mode.isVisible.
   }
 
   public getOutputs(): IOutputs {
